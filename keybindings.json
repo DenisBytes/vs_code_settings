@@ -1,0 +1,33 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+i",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Insert'",
+        "args": {
+            "after": [
+                "<C-i>"
+            ]
+        }
+    },
+    {
+        "key": "alt+u",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+            "after": [
+                "<C-u>"
+            ]
+        }
+    },
+    {
+        "key": "alt+p",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "panelAlignment == 'center' || panelPosition != 'bottom' && panelPosition != 'top'"
+    },
+    {
+        "key": "shift+alt+p",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "panelAlignment == 'center' || panelPosition != 'bottom' && panelPosition != 'top'"
+    }
+]
